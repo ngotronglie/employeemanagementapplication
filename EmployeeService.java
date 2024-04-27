@@ -63,7 +63,7 @@ public class EmployeeService {
 
     public void viewEmp() {
 
-        System.out.println("Enter id: ");
+        System.out.print("Enter id: ");
         id = sc.nextInt();
         for (Employee emp : empset) {
             if (emp.getId() == id) {
@@ -146,18 +146,18 @@ public class EmployeeService {
 
         // Nhập Designation từ người dùng
         System.out.print("Enter Designation (string): ");
-        String designation = sc.nextLine();
+        desiganation = sc.nextLine();
 
         // Nhập Department từ người dùng
         System.out.print("Enter Department (string): ");
-        String department = sc.nextLine();
+        department = sc.nextLine();
 
         // Nhập lương từ người dùng
         System.out.print("Enter salary (double): ");
-        double salary = sc.nextDouble();
+        salary = sc.nextDouble();
 
         // Tạo đối tượng Employee mới với các thông tin đã nhập
-        Employee emp = new Employee(id, name, age, designation, department, salary);
+        Employee emp = new Employee(id, name, age, desiganation, department, salary);
 
         // Thêm đối tượng Employee mới vào HashSet empset
         empset.add(emp);
