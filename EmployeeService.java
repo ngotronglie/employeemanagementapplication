@@ -139,7 +139,7 @@ public class EmployeeService {
 
         // Nhập tuổi từ người dùng
         System.out.print("Enter age (int): ");
-        int age = sc.nextInt();
+        age = sc.nextInt();
 
         // Bỏ qua dòng trống sau khi nhập số nguyên trước đó
         sc.nextLine();
